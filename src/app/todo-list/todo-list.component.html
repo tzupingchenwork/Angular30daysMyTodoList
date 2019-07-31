@@ -1,1 +1,28 @@
-<p>to do list work</p>
+<section class="todoapp">
+
+  <header class="header">
+	<h1>todos</h1>
+    <input
+      class="new-todo"
+      placeholder="What needs to be done?"
+      autofocus
+      (keyup.enter)="addTodo($event.target)"
+    >
+  </header>
+
+  <section class="main">
+
+    <ul class="todo-list">
+      <li *ngFor="let todo of getList()">
+        <div class="view">
+          <input class="toggle" type="checkbox">
+          <label>{{ todo }}</label>
+          <button class="destroy"></button>
+        </div>
+      </li>
+    </ul>
+
+  </section>
+
+
+</section>
