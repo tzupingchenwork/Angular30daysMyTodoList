@@ -11,4 +11,4 @@ import { TodoListComponent } from './todo-list.component';
   ],
   exports: [TodoListComponent]
 })
-export class TodoListModule { }
+export class TodoListModule {}
